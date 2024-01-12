@@ -73,7 +73,9 @@ def _wait_for_worker_nodes_to_start_sshd(hosts, interval=1, timeout_in_seconds=1
             time.sleep(interval)
 
 
-def _can_connect(host, port, s):
+from socket import gaierror as socket_error
+
+def _can_connect(host, port, s): # Catch the gaierror exception
     try:
         print("testing connection to host %s", host)
         s.connect((host, port))
