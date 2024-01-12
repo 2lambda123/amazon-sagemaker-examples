@@ -7,7 +7,7 @@
 # machine and combined with the account and region to form the repository name for ECR.
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source $DIR/set_env.sh
+source $DIR\set_env.sh
 
 # set region
 region=
