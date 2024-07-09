@@ -42,6 +42,6 @@ smdebug-rulesconfig==1.0.1
 tblib==3.0.0
 tqdm==4.66.4
 tzdata==2024.1
-urllib3==2.2.1
+urllib3==2.2.2
 watchtower==1.0.0
 zipp==3.19.1
